@@ -1,0 +1,23 @@
+.book-store-front-container {
+  display: grid;
+  justify-content: center;
+  height: 93.7vh;
+  width: 100vw;
+  background-color: bisque;
+}
+
+.book-store-front-welcome {
+  padding-top: 200px;
+  height: fit-content;
+  color: blue;
+  font: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: xx-large;
+}
+
+.book-store-front-description {
+  color: blueviolet;
+  font: bolder;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+}

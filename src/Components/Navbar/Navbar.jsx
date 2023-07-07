@@ -15,6 +15,11 @@ const Navbar = () => {
     setDropdown(false);
   };
 
+  const logoutHandler = () => {
+    sessionStorage.removeItem("userId");
+    navigate("/");
+  };
+
   const navigate = useNavigate();
 
   return (
@@ -64,7 +69,7 @@ const Navbar = () => {
               navigate("/");
             }}
           >
-            <div>Log Out</div>
+            <div onClick={logoutHandler}>Log Out</div>
           </div>
         </div>
       </div>

@@ -3,10 +3,15 @@
   align-items: center;
   justify-content: space-between;
   background-color: chocolate;
+  color: beige;
 }
 
 .navbar > div {
   cursor: pointer;
+}
+
+.navbar > div > div:hover {
+  color: cornflowerblue;
 }
 
 .logged-in-options {
@@ -22,6 +27,7 @@
 .dropdownshow.show {
   visibility: visible;
   opacity: 1;
+  color: crimson;
 }
 
 .dropdownshow {

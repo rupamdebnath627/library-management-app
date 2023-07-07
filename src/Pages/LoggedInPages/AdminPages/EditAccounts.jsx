@@ -95,19 +95,21 @@ const EditAccounts = () => {
 
   return (
     <>
-      <div>Edit Accounts</div>
-      <div className="account-list-container">{list_items}</div>
-      <ModalContainer
-        content={
-          <EditAccountsForm
-            accountId={modalUserId}
-            accounts={accounts}
-            onFormSubmit={modalClose}
-          />
-        }
-        showModal={showModal}
-        setShowModal={setShowModal}
-      />
+      <div className="edit-accounts-container">
+        <div className="edit-accounts-heading">Edit Accounts</div>
+        <div className="account-list-container">{list_items}</div>
+        <ModalContainer
+          content={
+            <EditAccountsForm
+              accountId={modalUserId}
+              accounts={accounts}
+              onFormSubmit={modalClose}
+            />
+          }
+          showModal={showModal}
+          setShowModal={setShowModal}
+        />
+      </div>
     </>
   );
 };

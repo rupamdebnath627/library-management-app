@@ -1,3 +1,17 @@
+.edit-accounts-container {
+  display: grid;
+  justify-items: center;
+  padding: 10px;
+}
+
+.edit-accounts-heading {
+  padding-top: 50px;
+  font-weight: 900;
+  font-size: 40px;
+  font-family: monospace;
+  color: coral;
+}
+
 .account-list-container {
   display: grid;
   justify-content: space-around;
