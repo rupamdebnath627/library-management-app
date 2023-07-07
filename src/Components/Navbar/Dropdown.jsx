@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "./Dropdown.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { accountActions } from "../../Store/AccountSlice";
 
 const Dropdown = () => {
   const accountId = sessionStorage.getItem("userId");
@@ -41,9 +42,12 @@ const Dropdown = () => {
     });
   }
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const dropdownClickHandler = (id) => {
     if (id === 1) {
+      dispatch(accountActions.deleteAccount(sessionStorage.getItem("userId")));
+      sessionStorage.removeItem("userId");
       navigate("/");
     } else if (id === 2) {
       navigate("edit-user-library");
