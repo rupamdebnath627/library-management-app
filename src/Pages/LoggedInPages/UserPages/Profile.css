@@ -1,0 +1,23 @@
+.profile-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 50px;
+  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(17, 15, 15);
+}
+
+.profile-container > div {
+  display: flex;
+  padding: 5px;
+  margin: 10px;
+  border: solid 5px;
+  border-radius: 10px;
+  background-color: rgb(185, 185, 185);
+}
+
+.profile-container > div > div {
+  padding: 50px;
+}

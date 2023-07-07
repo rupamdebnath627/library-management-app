@@ -3,6 +3,8 @@ import img from "../../../assets/The-Art-of-War-by-Sun-Tzu-Book.jpg";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { bookActions } from "../../../Store/BookSlice";
+import ModalContainer from "../../../Components/Models/ModalContainer";
+import EditBooksForm from "../../../Components/Edit-Books/EditBooksForm";
 
 // const DUMMY_BOOKS = [
 //   {
@@ -52,6 +54,8 @@ import { bookActions } from "../../../Store/BookSlice";
 const EditBooks = () => {
   // const [bookList, setBookList] = useState(DUMMY_BOOKS);
 
+  const [showModal, setShowModal] = useState(false);
+  const [modalBookId, setModalBookId] = useState(1);
   const books = useSelector((state) => state.books.availableBooks);
   const dispatch = useDispatch();
 
@@ -60,6 +64,15 @@ const EditBooks = () => {
     //   prevList.filter((book) => book.book_id !== bookId)
     // );
     dispatch(bookActions.deleteBook(bookId));
+  };
+
+  const editBookHandler = (book_id) => {
+    setModalBookId(book_id);
+    setShowModal(true);
+  };
+
+  const modalClose = () => {
+    setShowModal(false);
   };
 
   const list_items = books.map((book) => (
@@ -74,7 +87,12 @@ const EditBooks = () => {
           <div>Category: {book.book_category}</div>
         </div>
         <div className="edit-books-buttons">
-          <div className="edit-books-buttons--edit">Edit</div>
+          <div
+            onClick={() => editBookHandler(book.book_id)}
+            className="edit-books-buttons--edit"
+          >
+            Edit
+          </div>
           <div
             onClick={() => deleteBookHandler(book.book_id)}
             className="edit-books-buttons--delete"
@@ -90,6 +108,17 @@ const EditBooks = () => {
     <>
       <div>Edit Books</div>
       <div className="book-list-container">{list_items}</div>
+      <ModalContainer
+        content={
+          <EditBooksForm
+            book_id={modalBookId}
+            books={books}
+            onFormSubmit={modalClose}
+          />
+        }
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
     </>
   );
 };
