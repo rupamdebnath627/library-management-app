@@ -106,19 +106,21 @@ const EditBooks = () => {
 
   return (
     <>
-      <div>Edit Books</div>
-      <div className="book-list-container">{list_items}</div>
-      <ModalContainer
-        content={
-          <EditBooksForm
-            book_id={modalBookId}
-            books={books}
-            onFormSubmit={modalClose}
-          />
-        }
-        showModal={showModal}
-        setShowModal={setShowModal}
-      />
+      <div className="edit-books-container">
+        <div className="edit-books-heading">Edit Books</div>
+        <div className="book-list-container">{list_items}</div>
+        <ModalContainer
+          content={
+            <EditBooksForm
+              book_id={modalBookId}
+              books={books}
+              onFormSubmit={modalClose}
+            />
+          }
+          showModal={showModal}
+          setShowModal={setShowModal}
+        />
+      </div>
     </>
   );
 };

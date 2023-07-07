@@ -1,3 +1,17 @@
+.edit-books-container {
+  display: grid;
+  justify-items: center;
+  padding: 10px;
+}
+
+.edit-books-heading {
+  padding-top: 50px;
+  font-weight: 900;
+  font-size: 40px;
+  font-family: monospace;
+  color: coral;
+}
+
 .book-list-container {
   display: grid;
   justify-content: space-around;

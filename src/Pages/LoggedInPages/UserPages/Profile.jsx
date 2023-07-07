@@ -12,15 +12,16 @@ const Profile = () => {
   return (
     <>
       <div className="profile-container">
-        <div>
+        <div className="profile-heading">My Profile</div>
+        <div className="profile-items">
           <div>Name:</div>
           <div>{currentAccount.name}</div>
         </div>
-        <div>
+        <div className="profile-items">
           <div>Email ID:</div>
           <div>{currentAccount.email}</div>
         </div>
-        <div>
+        <div className="profile-items">
           <div>Account Type:</div>
           <div>{currentAccount.accountType}</div>
         </div>
