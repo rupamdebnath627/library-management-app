@@ -1,17 +1,17 @@
 .loginform-container {
   display: grid;
-  max-height: 800px;
+  height: 100vh;
   min-width: 300px;
-  border: solid rgb(255, 255, 255) 2px;
-  border-radius: 20px;
-  background-color: rgb(97, 197, 255);
   place-items: center;
   padding: 30px;
 }
 
 .loginform {
   display: grid;
-  padding: 20px;
+  padding: 100px;
+  border: solid rgb(255, 255, 255) 2px;
+  border-radius: 20px;
+  background-color: rgb(97, 197, 255);
 }
 
 .login-heading {
@@ -67,7 +67,7 @@ label {
   color: rgb(0, 4, 255);
   background-color: white;
   padding: 20px;
-  border: solid white;
+  border: solid rgb(58, 248, 0);
   border-radius: 30px;
   transition: all 0.3s;
 }

@@ -34,7 +34,7 @@ const LoginForm = () => {
 
   return (
     <div className="loginform-container">
-      <div className="login-heading">Log In with PCParts</div>
+      <div className="login-heading">Log into Library Management Sysytem</div>
       <div className="loginform">
         <label htmlFor="emailfield">Email Id</label>
         <input
