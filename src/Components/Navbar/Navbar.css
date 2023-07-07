@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: chocolate;
+}
+
+.navbar > div {
+  cursor: pointer;
+}
+
+.logged-in-options {
+  display: flex;
+}
+
+.logged-in-options > div {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.dropdownshow.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdownshow {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  overflow: hidden;
+}

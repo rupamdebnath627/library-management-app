@@ -1,0 +1,20 @@
+.dropdown {
+  display: grid;
+  place-items: center;
+  background-color: yellow;
+  z-index: 1;
+  top: 58px;
+  left: 20px;
+  position: absolute;
+}
+
+.dropdown-options {
+  display: grid;
+  justify-content: center;
+  padding: 40px;
+  min-width: 200px;
+}
+
+.dropdown-options:hover {
+  background-color: aquamarine;
+}

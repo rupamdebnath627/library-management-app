@@ -1,0 +1,78 @@
+.loginform-container {
+  display: grid;
+  max-height: 800px;
+  min-width: 300px;
+  border: solid rgb(255, 255, 255) 2px;
+  border-radius: 20px;
+  background-color: rgb(97, 197, 255);
+  place-items: center;
+  padding: 30px;
+}
+
+.loginform {
+  display: grid;
+  padding: 20px;
+}
+
+.login-heading {
+  display: flex;
+  min-width: 250px;
+  padding: 20px;
+  justify-content: center;
+  font-size: x-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: rgb(76, 0, 255);
+}
+
+input {
+  padding: 10px;
+  padding-left: 39px;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.2s all ease-in;
+}
+
+input:focus {
+  /* outline-style: solid;
+  outline-width: 3px;
+  outline-color: rgb(72, 255, 0); */
+  border: solid rgb(0, 4, 255) 2px;
+}
+
+label {
+  font-size: medium;
+  display: block;
+  padding-bottom: 10px;
+  color: rgb(4, 0, 255);
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.loginform img {
+  max-height: 25px;
+  max-width: 25px;
+  position: relative;
+  top: -32px;
+  left: 7px;
+}
+
+.login-form-submit {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  color: rgb(0, 4, 255);
+  background-color: white;
+  padding: 20px;
+  border: solid white;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.login-form-submit:hover {
+  cursor: pointer;
+  border-color: blue;
+}

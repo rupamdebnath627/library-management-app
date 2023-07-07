@@ -1,0 +1,41 @@
+.edit-accounts-form-container {
+  display: block;
+  place-items: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: solid 3px rgb(6, 173, 240);
+  width: 400px;
+}
+
+.edit-accounts-form-container > div {
+  padding: 20px;
+  background-color: cadetblue;
+  margin: 20px;
+  color: aliceblue;
+  border-radius: 20px;
+}
+
+div.edit-accounts-form-seletor {
+  display: block;
+  color: brown;
+}
+
+div.edit-accounts-form-submit {
+  display: grid;
+  place-items: center;
+  background-color: white;
+}
+
+div.edit-accounts-form-submit > div {
+  padding: 20px;
+  width: fit-content;
+  background-color: blue;
+  border-radius: 20px;
+}
+
+div.edit-accounts-form-submit > div:hover {
+  color: rgb(224, 252, 250);
+  background-color: rgb(2, 59, 26);
+  cursor: pointer;
+}

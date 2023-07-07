@@ -1,0 +1,74 @@
+.book-list-container {
+  display: grid;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.book-item {
+  display: flex;
+  padding: 30px;
+  border: solid 2px;
+  border-radius: 10px;
+  place-items: center;
+  margin: 30px;
+  background-color: rgb(216, 255, 242);
+}
+
+.edit-book-blocks {
+  display: grid;
+}
+
+.edit-book-blocks > div {
+  padding: 5px 30px;
+  width: 700px;
+  font-size: larger;
+  margin: 5px;
+  background-color: rgb(138, 138, 150);
+  display: grid;
+  place-items: center;
+  color: aliceblue;
+}
+
+.edit-books-buttons {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-books-buttons > div {
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-books-buttons--edit {
+  background-color: green;
+  border: solid 3px green;
+}
+
+.edit-books-buttons--delete {
+  background-color: red;
+  border: solid 3px red;
+}
+
+.edit-books-buttons--edit:hover {
+  background-color: white;
+  border: solid 3px green;
+  border-radius: 10px;
+  color: green;
+}
+
+.edit-books-buttons--delete:hover {
+  background-color: white;
+  border: solid 3px red;
+  border-radius: 10px;
+  color: red;
+}
+.edit-book-image {
+  padding: 20px;
+}
+img {
+  height: 220px;
+  width: 220px;
+}

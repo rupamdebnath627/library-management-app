@@ -1,0 +1,69 @@
+.account-list-container {
+  display: grid;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.account-item {
+  padding: 30px;
+  border: solid 2px;
+  border-radius: 10px;
+  place-items: center;
+  margin: 30px;
+  background-color: rgb(216, 255, 242);
+}
+
+.edit-account-blocks {
+  display: grid;
+}
+
+.edit-account-blocks > div {
+  padding: 5px 30px;
+  width: 700px;
+  font-size: larger;
+  margin: 5px;
+  background-color: rgb(138, 138, 150);
+  display: grid;
+  place-items: center;
+  color: aliceblue;
+}
+
+.edit-accounts-buttons {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-accounts-buttons > div {
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-accounts-buttons--edit {
+  background-color: green;
+  border: solid 3px green;
+}
+
+.edit-accounts-buttons--delete {
+  background-color: red;
+  border: solid 3px red;
+}
+
+.edit-accounts-buttons--edit:hover {
+  background-color: white;
+  border: solid 3px green;
+  border-radius: 10px;
+  color: green;
+}
+
+.edit-accounts-buttons--delete:hover {
+  background-color: white;
+  border: solid 3px red;
+  border-radius: 10px;
+  color: red;
+}
+.edit-account-image {
+  padding: 20px;
+}
